@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ultimate Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Ultimate Image Gallery</h1>
+
+<div class="buttons">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('bmw')">BMW Series</button>
+    <button onclick="filterImages('cars')">Cars</button>
+    <button onclick="filterImages('animals')">Animals</button>
+</div>
+
+<div class="gallery">
+
+    <div class="image-box bmw"><img src="Images/M1.jpg" onclick="openLightbox(0)"></div>
+<div class="image-box bmw"><img src="Images/M2.jpg" onclick="openLightbox(1)"></div>
+<div class="image-box bmw"><img src="Images/m3.jpg" onclick="openLightbox(2)"></div>
+<div class="image-box bmw"><img src="Images/m4.jpg" onclick="openLightbox(3)"></div>
+<div class="image-box bmw"><img src="Images/M5.webp" onclick="openLightbox(4)"></div>
+
+<div class="image-box animals"><img src="Images/LION.jpg" onclick="openLightbox(5)"></div>
+<div class="image-box animals"><img src="Images/ELEPHANT.jpg" onclick="openLightbox(6)"></div>
+<div class="image-box animals"><img src="Images/PANDA.webp" onclick="openLightbox(7)"></div>
+<div class="image-box animals"><img src="Images/TIGER.jpg" onclick="openLightbox(8)"></div>
+
+<div class="image-box cars"><img src="Images/FERRA2.png" onclick="openLightbox(9)"></div>
+<div class="image-box cars"><img src="Images/FERRARI.webp" onclick="openLightbox(10)"></div>
+<div class="image-box cars"><img src="Images/LAMBO.jpg" onclick="openLightbox(11)"></div>
+<div class="image-box cars"><img src="Images/LAMBO1.jpg" onclick="openLightbox(12)"></div>
+
+</div>
+
+<div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <button class="prev" onclick="prevImage()">❮</button>
+    <img id="lightbox-img">
+    <button class="next" onclick="nextImage()">❯</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
